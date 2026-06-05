@@ -1,0 +1,28 @@
+Öğrenci Bilgi Sistemi Algoritması  (Kaba Kod)
+
+1.	BAŞLA
+2.	SABİTLERİ TANIMLA: Ara Sınav=%30, Kısa Sınav=%10, Ödev=%20, Final=%40
+3.	GİRDİ: Kullanıcıdan arananNo bilgisini al
+4.	DOSYALARI AÇ: ogrencidosya.txt ve yoklama.dat.txt
+5.	EĞER dosyalar açılamazsa:
+o	Hata mesajı yaz ve BİTİR
+6.	DÖNGÜ: Dosyaların sonuna gelene kadar her satırı oku:
+o	Okunan no, arananNo ile eşleşiyor mu?
+o	EĞER Eşleşiyorsa:
+1.	bulundu = true yap
+2.	EĞER devamsizlikSaat > 16 ise:
+	durum = "DZ" ve gosterilecekFinal = -9
+3.	DEĞİLSE (Devamlı ise):
+	Sınav notlarını (ara, kisa, odev, final) al
+	Eksi bir (-1) olan notları sıfır (0) kabul et
+	Ortalama = (Ara * 0.3) + (Kısa * 0.1) + (Ödev * 0.2) + (Final * 0.4) formülünü uygula
+4.	HARF NOTU BELİRLE: Ortalama aralığına göre (AA, BA, ..., FF) harf ata
+5.	DURUM BELİRLE: Ortalama >= 50 ise "GEÇTİ", değilse "KALDI"
+6.	Tüm verileri tablo formatında ekrana yazdır
+7.	Döngüden çık (break)
+7.	DÖNGÜ BİTİŞ
+8.	EĞER bulundu hala false ise:
+o	"Öğrenci bulunamadı" mesajı yaz
+9.	DOSYALARI KAPAT
+10.	BİTİR
+
